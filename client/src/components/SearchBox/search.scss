@@ -1,0 +1,8 @@
+@import "../../styles/colors.scss";
+
+button {
+  background: 9px 12px url(../../images/ic_Search.png) $color-gray-light;
+  background-repeat: no-repeat;
+  height: 42px;
+  width: 35px;
+}
