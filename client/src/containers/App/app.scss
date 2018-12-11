@@ -1,0 +1,19 @@
+@import "../../styles/colors.scss";
+
+body {
+  background-color: $color-gray-light;
+  margin: 0;
+  padding: 0;
+
+  .app {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-row-gap: 16px;
+
+    .header {
+      background: $color-primary;
+      grid-column: 1 / -1;
+      padding: 10px;
+    }
+  }
+}
