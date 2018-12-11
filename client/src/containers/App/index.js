@@ -1,6 +1,7 @@
 import React from 'react';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import ProductsList from '../../components/ProductsList';
+import ProductDetails from '../../components/ProductDetails';
 import SearchBox from '../../components/SearchBox';
 import './app.scss';
 
@@ -10,10 +11,12 @@ const App = () => (
       <div className="header">
         <SearchBox />
       </div>
-      <Switch>
-        <Route path="/items/:id" component="" />
-        <Route path="/items" component={ProductsList} />
-      </Switch>
+      <div className="content">
+        <Switch>
+          <Route path="/items/:id" component={ProductDetails} />
+          <Route path="/items" component={ProductsList} />
+        </Switch>
+      </div>
     </div>
   </Router>
 );
