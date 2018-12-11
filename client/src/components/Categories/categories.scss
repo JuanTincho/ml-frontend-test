@@ -1,0 +1,9 @@
+@import "../../styles/colors.scss";
+
+.categories {
+  color: $color-gray;
+  margin-bottom: 16px;
+  .last-category {
+    font-weight: bold;
+  }
+}
