@@ -23,6 +23,11 @@ class SearchBox extends Component {
     }
   };
 
+  goHome = () => {
+    const { history } = this.props;
+    this.setState({ textValue: '' }, () => history.push('/'));
+  };
+
   searchItem = () => {
     const { textValue } = this.state;
     const { history } = this.props;
@@ -34,7 +39,7 @@ class SearchBox extends Component {
     return (
       <div className="search">
         <div className="column1">
-          <img src={logo} alt="ML-logo" />
+          <img src={logo} alt="ML-logo" onClick={this.goHome} />
         </div>
         <div className="column2">
           <input
@@ -50,6 +55,9 @@ class SearchBox extends Component {
   }
 }
 
-SearchBox.propTypes = {};
+SearchBox.propTypes = {
+  // eslint-disable-next-line react/require-default-props, react/forbid-prop-types
+  history: PropTypes.object,
+};
 
 export default withRouter(SearchBox);

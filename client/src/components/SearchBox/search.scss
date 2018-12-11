@@ -3,9 +3,14 @@
 .search {
   display: grid;
   grid-template-columns: repeat(24, 1fr);
+
   .column1 {
     grid-column: 3 / 4;
     width: 90px;
+
+    img {
+      cursor: pointer;
+    }
   }
 
   .column2 {
@@ -25,6 +30,7 @@
         outline: none;
       }
     }
+
     button {
       background: 9px 12px url(../../images/ic_Search.png) $color-gray-light;
       background-repeat: no-repeat;
