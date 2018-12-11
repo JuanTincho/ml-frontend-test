@@ -50,20 +50,24 @@ router.get('/:id', (req, res, next) => {
     .all([axios.get(itemPath), axios.get(descriptionPath)])
     .then(
       axios.spread(({ data: item }, { data: description }) => {
-        res.send({
-          item: {
-            id: item.id,
-            title: item.title,
-            price: {
-              currency: item.currency_id,
-              amount: item.price
-            },
-            picture: item.pictures[0].url,
-            condition: item.condition,
-            free_shipping: item.shipping.free_shipping,
-            sold_quantity: item.sold_quantity,
-            description: description.plain_text
-          }
+        const categoriesPath = `${MLapi}/categories/${item.category_id}`;
+        axios.get(categoriesPath).then(({ data: categories }) => {
+          res.send({
+            item: {
+              id: item.id,
+              title: item.title,
+              price: {
+                currency: item.currency_id,
+                amount: item.price
+              },
+              picture: item.pictures[0].url,
+              condition: item.condition,
+              free_shipping: item.shipping.free_shipping,
+              sold_quantity: item.sold_quantity,
+              description: description.plain_text,
+              categories: categories.path_from_root.map(category => category.name)
+            }
+          });
         });
       })
     )
