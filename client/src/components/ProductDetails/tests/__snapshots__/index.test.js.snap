@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductDetails render should match snapshotwith no item 1`] = `null`;
+
+exports[`ProductDetails render should match snapshotwith with an item  1`] = `
+Array [
+  <div
+    className="categories"
+  />,
+  <div
+    className="product-container"
+  >
+    <img
+      alt="mockedTitle"
+      src="mockedPic"
+    />
+    <div
+      className="details"
+    >
+      <div
+        className="details_column-1"
+      >
+        <p
+          className="condition"
+        >
+          Nuevo - 
+                  12 vendidos
+        </p>
+        <h1
+          className="title"
+        >
+          mockedTitle
+        </h1>
+        <p
+          className="price"
+        >
+          ARS 500.00
+        </p>
+      </div>
+      <div
+        className="details_column-2"
+      >
+        <button
+          type="button"
+        >
+           Comprar 
+        </button>
+      </div>
+    </div>
+    <div
+      className="description"
+    >
+      <h1>
+        Descripción del producto
+      </h1>
+      <p>
+        Descripcion
+      </p>
+    </div>
+  </div>,
+]
+`;

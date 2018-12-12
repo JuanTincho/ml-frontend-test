@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Categories renders correctly 1`] = `
+<div
+  className="categories"
+>
+  <span
+    className={null}
+  >
+    category1 &gt; 
+  </span>
+  <span
+    className={null}
+  >
+    category2 &gt; 
+  </span>
+  <span
+    className="last-category"
+  >
+    category3
+  </span>
+</div>
+`;

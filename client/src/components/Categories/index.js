@@ -21,7 +21,7 @@ Categories.propTypes = {
 };
 
 Categories.defaultProps = {
-  categories: '',
+  categories: [],
 };
 
 export default Categories;

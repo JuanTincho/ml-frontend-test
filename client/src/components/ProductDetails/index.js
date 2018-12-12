@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import axios from 'axios';
 import Categories from '../Categories';
 import './productDetails.scss';
-// import getParams from '../../utils/getParams';
 
 class ProductDetails extends Component {
   constructor(props) {

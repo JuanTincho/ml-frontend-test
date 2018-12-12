@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductDetails should match snapshotwith no products 1`] = `
+Array [
+  <div
+    className="categories"
+  />,
+  <div
+    className="products-list"
+  />,
+]
+`;

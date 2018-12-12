@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBox renders correctly 1`] = `
+<div
+  className="app"
+>
+  <div
+    className="header"
+  >
+    <div
+      className="search"
+    >
+      <div
+        className="column1"
+      >
+        <img
+          alt="ML-logo"
+          onClick={[Function]}
+          src="test-file-stub"
+        />
+      </div>
+      <div
+        className="column2"
+      >
+        <input
+          onChange={[Function]}
+          onKeyPress={[Function]}
+          placeholder="Nunca dejes de buscar"
+          value=""
+        />
+        <button
+          onClick={[Function]}
+          type="submit"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="content"
+  />
+</div>
+`;
