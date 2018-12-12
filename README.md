@@ -47,4 +47,13 @@ Client is inside client folder.
   
   The app will run on `http://localhost:5000`
   
+  ### Test
+  
+  ```
+  cd client
+  npm i
+  npm test
+  ```
+
+  
   
