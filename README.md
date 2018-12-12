@@ -2,6 +2,8 @@
 
 React/Express App.
 
+_Not implemented due to lack of time: Unit tests (Jest), Loader Widget (for API calls)._
+
 Client is inside client folder.
 
 ## Use
@@ -28,7 +30,7 @@ Client is inside client folder.
   
   ### Production
   
-  1. Build client (note: a build folder is already uploaded to the repository, thus this step can be omitted)
+  1. Build client _(note: a build folder is already uploaded to the repository, thus this step can be omitted)_
   
   ```
   cd client
